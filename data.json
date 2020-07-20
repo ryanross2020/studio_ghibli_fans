@@ -1,0 +1,43 @@
+{
+  "fans": [
+    {
+      "id": "1",
+      "first_name": "Ryan",
+      "last_name": "Ross",
+      "username": "hawken110",
+      "email": "ryanross@ryan.com",
+      "age": 34,
+      "favorite_film": "My Neighbor Totoro",
+      "favorite_character": "Totoro",
+      "hobbies": "cooking",
+      "favorite_food": "dessert",
+      "notes": "Have a good day!"
+    },
+    {
+      "id": "3",
+      "first_name": "Joe",
+      "last_name": "Weber",
+      "username": "joseW77",
+      "email": "joe@ryan.com",
+      "age": 43,
+      "favorite_film": "Spirited Away",
+      "favorite_character": "Susuwatari",
+      "hobbies": "graphic art",
+      "favorite_food": "dr. pepper",
+      "notes": "I like to play games!"
+    },
+    {
+      "first_name": "Arthur",
+      "last_name": "Bernier",
+      "username": "SirArthur",
+      "email": "arthur@arthur.com",
+      "age": 25,
+      "favorite_film": "Ponyo",
+      "favorite_character": "Ponyo",
+      "hobbies": "teaches",
+      "favorite_food": "cake",
+      "notes": "hello world",
+      "id": "M7TXfTo"
+    }
+  ]
+}
