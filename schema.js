@@ -117,7 +117,7 @@ const RootQuery = new GraphQLObjectType({
         //   }
         // }
         return axios
-          .get('http://localhost:3000/fans/' + args.id)
+          .get('http://localhost:3001/fans/' + args.id)
           .then((res) => res.data);
       },
     },
@@ -125,7 +125,7 @@ const RootQuery = new GraphQLObjectType({
       type: new GraphQLList(FanType),
       resolve(parentValue, args) {
         // return fans;
-        return axios.get('http://localhost:3000/fans').then((res) => res.data);
+        return axios.get('http://localhost:3001/fans').then((res) => res.data);
       },
     },
     peoples: {
@@ -189,7 +189,7 @@ const mutation = new GraphQLObjectType({
       },
       resolve(parentValue, args) {
         return axios
-          .post('http://localhost:3000/fans', {
+          .post('http://localhost:3001/fans', {
             first_name: args.first_name,
             last_name: args.last_name,
             username: args.username,
@@ -211,7 +211,7 @@ const mutation = new GraphQLObjectType({
       },
       resolve(parentValue, args) {
         return axios
-          .delete('http://localhost:3000/fans/' + args.id)
+          .delete('http://localhost:3001/fans/' + args.id)
           .then((res) => res.data);
       },
     },
@@ -232,7 +232,7 @@ const mutation = new GraphQLObjectType({
       },
       resolve(parentValue, args) {
         return axios
-          .patch('http://localhost:3000/fans/' + args.id, args)
+          .patch('http://localhost:3001/fans/' + args.id, args)
           .then((res) => res.data);
       },
     },
